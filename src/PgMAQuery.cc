@@ -17,7 +17,7 @@ PgMAQuery::~PgMAQuery()
  * @brief       : write data to file.
  * @filePath    : output file path with file name.
  */
-FileInfo
+FileInfo*
 PgMAQuery::writeToFile(string& filePath)
 {
     return writeToFile(eRetFormat_, filePath);
@@ -28,7 +28,7 @@ PgMAQuery::writeToFile(string& filePath)
  * @eFileFormat : output file format.
  * @filePath    : output file path with file name.
  */
-FileInfo
+FileInfo*
 PgMAQuery::writeToFile(EFormat eFileFormat, string& filePath)
 {
     switch(eFileFormat)
@@ -54,7 +54,7 @@ PgMAQuery::writeToFile(EFormat eFileFormat, string& filePath)
 /**
  * @brief       : write data to memory buffer.
  */
-MemBuf
+MemBuf*
 PgMAQuery::writeToBuf()
 {
     return writeToBuf(eRetFormat_);
@@ -64,7 +64,7 @@ PgMAQuery::writeToBuf()
  * @brief       : write data to memory buffer.
  * @eFormat     : output buf format
  */
-MemBuf
+MemBuf*
 PgMAQuery::writeToBuf(EFormat eFormat)
 {
     switch(eFormat)
