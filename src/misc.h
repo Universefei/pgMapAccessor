@@ -3,10 +3,10 @@
 
 enum EFormat
 {
-    ef_XML,
+    eF_XML = 0,
     eF_KML,
     eF_GML,
     eF_Geojson,
-    ef_Shapefile
+    eF_Shapefile
 
 }
